@@ -23,7 +23,7 @@ android {
 }
 
 dependencies {
-    implementation project(':api')
+    api project(':api')
     //implementation 'com.google.guava:guava:18.0'
 }
 //for upload jar
