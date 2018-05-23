@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion '23.0.2'
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 23
+        targetSdkVersion 27
         versionCode 1
         versionName VERSION_NAME
     }
@@ -23,8 +23,8 @@ android {
 }
 
 dependencies {
-    compile 'com.jiechic.library:Japng:0.5.1'
-    //compile 'com.google.guava:guava:18.0'
+    implementation project(':api')
+    //implementation 'com.google.guava:guava:18.0'
 }
 //for upload jar
 buildscript {
@@ -32,7 +32,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.5'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
     }
 }
 apply from: 'gradle-jcenter-push.gradle'

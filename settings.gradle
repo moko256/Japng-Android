@@ -1,1 +1,2 @@
-include ':android_api', ':android_demo'
+include ':android_api', ':android_demo', ':api'
+project(':api').projectDir = new File('japng/api')
