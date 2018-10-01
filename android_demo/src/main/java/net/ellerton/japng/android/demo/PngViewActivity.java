@@ -22,7 +22,7 @@ import android.os.Bundle;
 //import android.support.v4.app.FragmentTransaction;
 //import android.support.v4.app.FragmentActivity;
 //import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.ActionBarActivity;
+import androidx.appcompat.app.ActionBarActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -45,12 +45,12 @@ public class PngViewActivity extends ActionBarActivity {
     public Uri loadUri; //implements ActionBar.TabListener {
 
     /**
-     * The {@link android.support.v4.view.PagerAdapter} that will provide
+     * The {@link androidx.core.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
      * {@link FragmentPagerAdapter} derivative, which will keep every
      * loaded fragment in memory. If this becomes too memory intensive, it
      * may be best to switch to a
-     * {@link android.support.v4.app.FragmentStatePagerAdapter}.
+     * {@link androidx.core.app.FragmentStatePagerAdapter}.
      */
     //SectionsPagerAdapter sectionsPagerAdapter;
 
