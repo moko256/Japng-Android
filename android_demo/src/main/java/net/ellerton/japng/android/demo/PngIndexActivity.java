@@ -1,9 +1,6 @@
 package net.ellerton.japng.android.demo;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.net.Uri;
-import androidx.appcompat.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -14,12 +11,10 @@ import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
 
-import net.ellerton.japng.android.api.PngAndroid;
 import net.ellerton.japng.android.demo.index.IndexExpandableListAdapter;
-import net.ellerton.japng.android.demo.index.ResourceIndexItem;
-import net.ellerton.japng.android.demo.index.PngSuiteIndexItem;
 import net.ellerton.japng.android.demo.index.IndexItems;
-import net.ellerton.japng.android.demo.index.UrlIndexItem;
+import net.ellerton.japng.android.demo.index.PngSuiteIndexItem;
+import net.ellerton.japng.android.demo.index.ResourceIndexItem;
 import net.ellerton.japng.android.demo.util.IntentInflater;
 
 import java.io.IOException;
@@ -28,8 +23,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import androidx.appcompat.app.AppCompatActivity;
 
-public class PngIndexActivity extends ActionBarActivity {
+
+public class PngIndexActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

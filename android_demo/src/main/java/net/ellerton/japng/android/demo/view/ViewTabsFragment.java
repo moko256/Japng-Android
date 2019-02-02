@@ -29,8 +29,6 @@ import android.os.Bundle;
 //import android.support.v4.app.FragmentManager;
 //import android.support.v4.app.FragmentActivity;
 //import android.support.v4.app.FragmentTransaction;
-import androidx.core.view.PagerAdapter;
-import androidx.core.view.ViewPager;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -57,6 +55,9 @@ import net.ellerton.japng.error.PngException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 
 /**
@@ -158,7 +159,7 @@ public class ViewTabsFragment extends Fragment {
     // END_INCLUDE (fragment_onviewcreated)
 
     /**
-     * The {@link androidx.core.view.PagerAdapter} used to display pages in this sample.
+     * The {@link androidx.viewpager.widget.PagerAdapter} used to display pages in this sample.
      * The individual pages are simple and just display two lines of text. The important section of
      * this class is the {@link #getPageTitle(int)} method which controls what is displayed in the
      * {@link SlidingTabLayout}.

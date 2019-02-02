@@ -7,22 +7,7 @@ import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-//import android.support.v13.app.FragmentPagerAdapter;
-////import android.support.v4.view.ViewPager;
-//import android.support.v4.app.FragmentTransaction;
-////import android.support.v7.app.ActionBarActivity;
-////import android.support.v7.app.ActionBar;
-//import android.support.v4.app.Fragment;
-////import android.support.v4.app.FragmentManager;
-////import android.support.v4.app.FragmentTransaction;
-////import android.support.v4.app.FragmentPagerAdapter;
-////import android.support.v4.view.ViewPager;
 import android.os.Bundle;
-//import android.support.v4.app.FragmentActivity;
-//import android.support.v4.app.FragmentTransaction;
-//import android.support.v4.app.FragmentActivity;
-//import android.support.v4.app.FragmentTransaction;
-import androidx.appcompat.app.ActionBarActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -40,17 +25,19 @@ import net.ellerton.japng.android.demo.view.ViewTabsFragment;
 import net.ellerton.japng.argb8888.Argb8888BitmapSequence;
 import net.ellerton.japng.error.PngException;
 
+import androidx.appcompat.app.AppCompatActivity;
 
-public class PngViewActivity extends ActionBarActivity {
+
+public class PngViewActivity extends AppCompatActivity {
     public Uri loadUri; //implements ActionBar.TabListener {
 
     /**
-     * The {@link androidx.core.view.PagerAdapter} that will provide
+     * The {@link androidx.viewpager.widget.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
-     * {@link FragmentPagerAdapter} derivative, which will keep every
+     * {@link androidx.fragment.app.FragmentPagerAdapter} derivative, which will keep every
      * loaded fragment in memory. If this becomes too memory intensive, it
      * may be best to switch to a
-     * {@link androidx.core.app.FragmentStatePagerAdapter}.
+     * {@link androidx.fragment.app.FragmentStatePagerAdapter}.
      */
     //SectionsPagerAdapter sectionsPagerAdapter;
 
