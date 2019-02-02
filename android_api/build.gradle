@@ -8,7 +8,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 28
         versionCode 1
-        versionName VERSION_NAME
+        versionName "1.0"
     }
     buildTypes {
         release {
@@ -17,8 +17,8 @@ android {
         }
     }
     compileOptions {
-        targetCompatibility JavaVersion.VERSION_1_8
-        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_7
+        sourceCompatibility JavaVersion.VERSION_1_7
     }
 }
 
@@ -26,13 +26,3 @@ dependencies {
     api project(':api')
     //implementation 'com.google.guava:guava:18.0'
 }
-//for upload jar
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
-    }
-}
-apply from: 'gradle-jcenter-push.gradle'
