@@ -23,6 +23,6 @@ android {
 }
 
 dependencies {
-    api project(':api')
+    api project(':japng:api')
     //implementation 'com.google.guava:guava:18.0'
 }
