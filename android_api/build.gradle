@@ -20,6 +20,9 @@ android {
         targetCompatibility JavaVersion.VERSION_1_7
         sourceCompatibility JavaVersion.VERSION_1_7
     }
+    libraryVariants.all {
+        it.getGenerateBuildConfigProvider().configure { it.enabled = false }
+    }
 }
 
 dependencies {
