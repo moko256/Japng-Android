@@ -95,6 +95,7 @@ public class PngAnimationComposer {
             Argb8888Bitmap bitmap = scanlineProcessor.getBitmap(); // TODO: ok?
             view.setImageBitmap(PngAndroid.toBitmap(bitmap)); // TODO: ok?
         } else {
+            //noinspection deprecation
             view.setBackgroundDrawable(assemble());
         }
         return view;
